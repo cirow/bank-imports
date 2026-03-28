@@ -1,0 +1,27 @@
+place,group_sales,category,is_regex
+UFFA REDE DE LOJAS DE P,True,Custos fixos
+DELIVERYMUCH,True,Prazeres
+PERUZZO,True,Custos fixos
+99 TECNOLOGIA,True,Conforto
+99*,True,Conforto
+MONGERAL*SEGUROS,False,Metas
+ORACLE BRASIL,False,Conforto
+PORTO SEGURO,False,Metas
+PIZZERIA,False,Prazeres
+PIZZA,False,Prazeres
+RESTAURANTE,False,Prazeres
+YOUTUBEPREM,False,Conforto
+RAIA,False,Custos fixos
+PETZ,False,Custos fixos
+NETFLIX,False,Conforto
+WELLHUB,False,Conforto
+REDE VIVO,True,Custos fixos
+TONIOLOSERVICOSDE,False,Prazeres
+MONGERAL,False,Metas
+CONTA VIVO,False,Custos fixos
+Rendimentos,True,Custos fixos 
+MARCOS CORREA CARDOSO,True,Conforto
+NEUTZLING,True,Conforto
+Transferência Pix recebida Augusta,True,Prazeres
+Transferência Pix recebida EDUARDA,True,Prazeres
+Dinheiro re,True,Custos fixos
