@@ -4,6 +4,7 @@ DELIVERYMUCH,True,Prazeres
 PERUZZO,True,Custos fixos
 99 TECNOLOGIA,True,Conforto
 99*,True,Conforto
+UBER*,True,Conforto
 MONGERAL*SEGUROS,False,Metas
 ORACLE BRASIL,False,Conforto
 PORTO SEGURO,False,Metas
@@ -25,3 +26,7 @@ NEUTZLING,True,Conforto
 Transferência Pix recebida Augusta,True,Prazeres
 Transferência Pix recebida EDUARDA,True,Prazeres
 Dinheiro re,True,Custos fixos
+ACOUGUEFOGODECHAO,False,Custos fixos 
+STEAM,False,Prazeres
+CIA DOS BICHOS,False,Custos fixos
+AIRBNB*,True,Prazeres

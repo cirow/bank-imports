@@ -4,6 +4,7 @@ from mercadopago_adapter import MpagoAdapter
 import statement
 from pathlib import Path
 from xp_adapter import XPAdapter
+from nubank_adapter import NubankAdapter
 
 def classify(filename: str, type: str):
     the_statement = readFile(filename, type)
@@ -17,6 +18,8 @@ def readFile(filename, type) -> statement.Statement:
             return XPAdapter(filename).to_statement()
         case "mpago":
             return MpagoAdapter(filename).to_statement()
+        case "nubank":
+            return NubankAdapter(filename).to_statement()
         case _:
             click.echo("Error, unsupported statement type: {type}",err=True)
             exit(1)

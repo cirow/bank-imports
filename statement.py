@@ -32,7 +32,11 @@ class Statement:
     def brl_to_decimal(brl: str) -> Decimal:
         if not brl:
             return Decimal('0')
-        _dec = Decimal(brl.replace("R$","").replace(" ","").replace(".","").replace(",","."))
+        _dec = None
+        if isinstance(brl, str):
+            _dec = Decimal(brl.replace("R$","").replace(" ","").replace(".","").replace(",","."))
+        elif isinstance(brl, float):
+            _dec = Decimal(brl)
         return _dec.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
 
     def group_similar_purchases(self, label: str, label_text: str):
