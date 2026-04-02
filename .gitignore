@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+# Sample data files
+*.csv
+*.pdf
+
+# But keep categories config files
+!categories.csv
+!categories-regex.csv

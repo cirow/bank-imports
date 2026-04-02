@@ -1,11 +1,13 @@
 from statement import Statement
-from statement_adapter import StatementAdapter
+from adapters.base import StatementAdapter
 import pandas as pd
 
 class XPAdapter(StatementAdapter):
     columns = {"Data", "Estabelecimento", "Portador",	"Valor", "Parcela"}
+    file_type = "csv"
 
     def __init__(self, filename):
+        self.validate_file_type(filename)
         self.df = pd.read_csv(filename, sep=";", parse_dates=["Data"], date_format="%d/%m/%Y" )
         self.validate_columns(self.df)
 
@@ -19,4 +21,3 @@ class XPAdapter(StatementAdapter):
         for c in columns_add:
             _df[c] = ""
         return Statement(_df)
-
