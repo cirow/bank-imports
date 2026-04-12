@@ -1,7 +1,7 @@
-place,group_sales,category,is_regex
-UFFA REDE DE LOJAS DE P,True,Custos fixos
-DELIVERYMUCH,True,Prazeres
-PERUZZO,True,Custos fixos
+place,group_sales,category,rewrite_to
+UFFA,False,Custos fixos
+DELIVERYMUCH,False,Prazeres
+PERUZZO,False,Custos fixos
 99 TECNOLOGIA,True,Conforto
 99*,True,Conforto
 UBER*,True,Conforto
@@ -16,7 +16,7 @@ RAIA,False,Custos fixos
 PETZ,False,Custos fixos
 NETFLIX,False,Conforto
 WELLHUB,False,Conforto
-REDE VIVO,True,Custos fixos
+SUP. LIBRAGA,False,Custos fixos,REDE VIVO
 TONIOLOSERVICOSDE,False,Prazeres
 MONGERAL,False,Metas
 CONTA VIVO,False,Custos fixos

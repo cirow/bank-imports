@@ -1,12 +1,14 @@
 import click
-import categories
+import rules
 import statement
 from pathlib import Path
 from adapters import XPAdapter, MpagoAdapter, NubankAdapter, PluxeeAdapter
 
-def classify(filename: str, type: str):
+def classify(filename: str, type: str, month: int, year: int):
     the_statement = readFile(filename, type)
-    the_statement = categorize(the_statement)
+    the_statement = rules.filter_date(the_statement, month, year)
+    the_statement = rules.apply(the_statement)
+    click.echo(the_statement)
     writeStatement(filename, the_statement)
 
 def readFile(filename, type) -> statement.Statement:
@@ -23,14 +25,6 @@ def readFile(filename, type) -> statement.Statement:
         case _:
             click.echo("Error, unsupported statement type: {type}",err=True)
             exit(1)
-
-def categorize(_statement: statement.Statement):
-    for c in categories.CATEGORY_ASSIGMENT:
-        if c["group_sales"]:
-            _statement.group_similar_purchases(statement.Statement.PLACE_FIELD, c["place"])
-        _statement.categorize_purchases(statement.Statement.PLACE_FIELD, c["place"], c["category"]) 
-    click.echo(_statement)
-    return _statement
 
 def writeStatement(filename: str, _statement: statement.Statement):
     path = Path(filename)

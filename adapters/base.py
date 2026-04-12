@@ -23,3 +23,4 @@ class StatementAdapter:
         extra = set(df.columns) - self.columns
         if missing or extra:
             raise ValueError(f"Invalid columns:\nMissing: {missing}\nExtra: {extra}")
+
