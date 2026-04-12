@@ -1,4 +1,4 @@
-from statement import Statement
+from core.statement import Statement
 from adapters.base import StatementAdapter
 import pandas as pd
 

@@ -1,6 +1,6 @@
 import click
-import rules
-import statement
+from core import rules
+from core import statement
 from pathlib import Path
 from adapters import XPAdapter, MpagoAdapter, NubankAdapter, PluxeeAdapter
 
@@ -30,4 +30,3 @@ def writeStatement(filename: str, _statement: statement.Statement):
     path = Path(filename)
     new_filename = path.with_name(f"{path.stem}_categorized.csv")
     _statement.df.to_csv(new_filename, sep=";", index=False)
-

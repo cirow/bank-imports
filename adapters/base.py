@@ -1,4 +1,4 @@
-from statement import Statement
+from core.statement import Statement
 from pathlib import Path
 
 class StatementAdapter:
@@ -8,6 +8,13 @@ class StatementAdapter:
     """Read file and validate the columns"""
     def __init__(self):
         pass
+
+
+    @classmethod
+    def generate_csv_adapter_signature(columns, file_type):
+        sig = "_".join(columns)
+        sig += file_type
+        return sig
 
     """Convert the file to the Statement class standard"""
     def to_statement(self) -> Statement:

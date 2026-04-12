@@ -10,3 +10,14 @@ dependencies = [
     "pandas>=3.0.2",
     "pdfplumber>=0.11.9",
 ]
+
+[tool.uv]
+package = true
+
+[tool.setuptools.packages.find]
+include = ["adapters*", "interfaces*", "core*"]
+
+[project.scripts]
+classify = "interfaces.cli.main:classify"
+marimo-run = "interfaces.marimo:run"
+marimo-edit = "interfaces.marimo:edit"

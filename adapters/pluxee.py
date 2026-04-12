@@ -1,4 +1,4 @@
-from statement import Statement
+from core.statement import Statement
 from adapters.base import StatementAdapter
 import pandas as pd
 import pdfplumber
@@ -29,7 +29,6 @@ class PluxeeAdapter(StatementAdapter):
     file_type = "pdf"
 
     def __init__(self, filename):
-        self.validate_file_type(filename)
         pdf_text = self._extract_pdf_text(filename)
         self.df, self.errors = self._parse_transactions(pdf_text)
         self.validate_columns(self.df)

@@ -1,5 +1,5 @@
 import csv
-import statement
+from . import statement
 
 ASSIGNMENTS = []
 _fieldnames = ['place', 'group_sales', 'category', 'rewrite_to']

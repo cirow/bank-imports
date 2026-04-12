@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "ddf8dd68e3d0668e10b5b6020abbf5e7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "4b54ea02c4283512b0d17dc429677822",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='a3188c8f-5419-8b39-b83f-9f751063a2a9'><marimo-file data-initial-value='[]' data-label='null' data-filetypes='[]' data-multiple='false' data-kind='&quot;area&quot;' data-max_size='100000000'></marimo-file></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "d74bdf107677d3428b35eab948536f6c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='fcf3d450-9017-eaba-f381-98954a15d485'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-26 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;6.19&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-26 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;16.11&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-25 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;7.51&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-25 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;77.91&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;SUP. LIBRAGA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-24 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;13.88&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-24 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;2.99&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-20 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;2.17&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-19 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;9.18&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-18 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;3.02&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:9,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-18 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;137.48&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;PERUZZO SUPERMERCADOS XVI&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;}]&quot;' data-total-rows='71' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;date&quot;,[&quot;datetime&quot;,&quot;datetime64[ns]&quot;]],[&quot;amount&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;place&quot;,[&quot;string&quot;,&quot;string&quot;]],[&quot;category&quot;,[&quot;string&quot;,&quot;string&quot;]],[&quot;installment&quot;,[&quot;string&quot;,&quot;string&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
