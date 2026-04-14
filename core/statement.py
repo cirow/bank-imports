@@ -68,6 +68,13 @@ class Statement:
         _df.loc[_df[label].str.contains(label_text), Statement.CATEGORY_FIELD] = category
         self.df = _df
 
+    def to_sheets_df(self, payee: str = "PAYEE_NAME") -> pd.DataFrame:
+        _df = self.df[[Statement.DATE_FIELD, Statement.AMOUNT_FIELD, Statement.PLACE_FIELD]].copy()
+        _df[Statement.DATE_FIELD] = _df[Statement.DATE_FIELD].dt.strftime("%d/%m/%Y")
+        _df[Statement.AMOUNT_FIELD] = _df[Statement.AMOUNT_FIELD].apply(lambda x: str(x).replace(".", ","))
+        _df["payee"] = payee
+        return _df
+
     def filter_date(self, month, year):
         if year == 0:
             year = datetime.now().year
@@ -75,8 +82,8 @@ class Statement:
             from_date = pd.to_datetime(f"{year:04d}-01-01")
             to_date = pd.to_datetime(f"{year:04d}-12-31")
         else:
-            last_day = calendar.monthrange(2026, month)[1]
-            from_date = pd.to_datetime(f"2026-{month:02d}-01")
-            to_date = pd.to_datetime(f"2026-{month:02d}-{last_day:02d}")
+            last_day = calendar.monthrange(year, month)[1]
+            from_date = pd.to_datetime(f"{year:04d}-{month:02d}-01")
+            to_date = pd.to_datetime(f"{year:04d}-{month:02d}-{last_day:02d}")
 
         return(self.df[self.df[self.DATE_FIELD].between(from_date, to_date)])

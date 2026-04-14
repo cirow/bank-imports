@@ -11,10 +11,12 @@ class StatementAdapter:
 
 
     @classmethod
-    def generate_csv_adapter_signature(columns, file_type):
-        sig = "_".join(columns)
-        sig += file_type
-        return sig
+    def generate_csv_adapter_signature(cls) -> str:
+        return "_".join(sorted(c.lower() for c in cls.columns)) + "_" + cls.file_type
+
+    @classmethod
+    def matches(cls, file_signature: str) -> bool:
+        return cls.generate_csv_adapter_signature() == file_signature
 
     """Convert the file to the Statement class standard"""
     def to_statement(self) -> Statement:

@@ -7,9 +7,9 @@ class MpagoAdapter(StatementAdapter):
     file_type = "csv"
 
     def __init__(self, filename):
-        self.validate_file_type(filename)
         self.df = pd.read_csv(filename, header=2, sep=";")
         self.validate_columns(self.df)
+        self.signature = self.generate_csv_adapter_signature()
 
     def to_statement(self) -> Statement:
         columns_remap={"RELEASE_DATE": "date", "TRANSACTION_TYPE": "place", "TRANSACTION_NET_AMOUNT": "amount"}

@@ -9,6 +9,7 @@ dependencies = [
     "marimo>=0.23.0",
     "pandas>=3.0.2",
     "pdfplumber>=0.11.9",
+    "pydantic-ai>=1.80.0",
 ]
 
 [tool.uv]

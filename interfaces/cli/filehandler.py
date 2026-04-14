@@ -2,7 +2,7 @@ import click
 from core import rules
 from core import statement
 from pathlib import Path
-from adapters import XPAdapter, MpagoAdapter, NubankAdapter, PluxeeAdapter
+from adapters import XPAdapter, MpagoAdapter, NubankAdapter, PluxeeAdapter, detect
 
 def classify(filename: str, type: str, month: int, year: int):
     the_statement = readFile(filename, type)
@@ -13,6 +13,10 @@ def classify(filename: str, type: str, month: int, year: int):
 
 def readFile(filename, type) -> statement.Statement:
     click.echo("Reading file")
+    if type is None:
+        adapter_class = detect(filename, filename)
+        click.echo(f"Auto detected {adapter_class.__name__.replace("Adapter", "")}")
+        return adapter_class(filename).to_statement()
     match type:
         case "xp":
             return XPAdapter(filename).to_statement()
@@ -23,7 +27,7 @@ def readFile(filename, type) -> statement.Statement:
         case "pluxee":
             return PluxeeAdapter(filename).to_statement()
         case _:
-            click.echo("Error, unsupported statement type: {type}",err=True)
+            click.echo(f"Error, unsupported statement type: {type}", err=True)
             exit(1)
 
 def writeStatement(filename: str, _statement: statement.Statement):

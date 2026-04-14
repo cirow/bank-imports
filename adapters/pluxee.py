@@ -27,6 +27,11 @@ IGNORED_LINES = {"Saldo liberado", "Agendamento de Benefício"}
 class PluxeeAdapter(StatementAdapter):
     columns = {"date", "amount", "place"}
     file_type = "pdf"
+    signature = "extrato_multibenefícios_pdf"
+
+    @classmethod
+    def matches(cls, file_signature: str) -> bool:
+        return cls.signature == file_signature
 
     def __init__(self, filename):
         pdf_text = self._extract_pdf_text(filename)

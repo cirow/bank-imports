@@ -7,7 +7,7 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "ddf8dd68e3d0668e10b5b6020abbf5e7",
+      "code_hash": "df4d1913bdaeb9aee84e35989e75acb5",
       "outputs": [
         {
           "type": "data",
@@ -20,12 +20,12 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "4b54ea02c4283512b0d17dc429677822",
+      "code_hash": "732665a6a4455803c41705507d5a4de1",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='a3188c8f-5419-8b39-b83f-9f751063a2a9'><marimo-file data-initial-value='[]' data-label='null' data-filetypes='[]' data-multiple='false' data-kind='&quot;area&quot;' data-max_size='100000000'></marimo-file></marimo-ui-element>"
+            "text/plain": ""
           }
         }
       ],
@@ -33,12 +33,57 @@
     },
     {
       "id": "vblA",
-      "code_hash": "d74bdf107677d3428b35eab948536f6c",
+      "code_hash": "7a49f3dba66dfd99dd8ab92c03102ee6",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='fcf3d450-9017-eaba-f381-98954a15d485'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-26 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;6.19&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-26 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;16.11&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-25 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;7.51&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-25 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;77.91&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;SUP. LIBRAGA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-24 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;13.88&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-24 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;2.99&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-20 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;2.17&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-19 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;9.18&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-18 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;3.02&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;UFFA&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:9,&#92;&quot;date&#92;&quot;:&#92;&quot;2026-03-18 00:00:00&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;137.48&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;PERUZZO SUPERMERCADOS XVI&#92;&quot;,&#92;&quot;category&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;installment&#92;&quot;:&#92;&quot;&#92;&quot;}]&quot;' data-total-rows='71' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;date&quot;,[&quot;datetime&quot;,&quot;datetime64[ns]&quot;]],[&quot;amount&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;place&quot;,[&quot;string&quot;,&quot;string&quot;]],[&quot;category&quot;,[&quot;string&quot;,&quot;string&quot;]],[&quot;installment&quot;,[&quot;string&quot;,&quot;string&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='660a7673-cc04-ab1a-089a-9fb910191b57'><marimo-dropdown data-initial-value='[]' data-label='null' data-options='[&quot;CIRO&quot;,&quot;GUTA&quot;]' data-allow-select-none='true' data-searchable='false' data-full-width='false'></marimo-dropdown></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "4b54ea02c4283512b0d17dc429677822",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='9dcaf5ea-f7e9-f32d-7d54-018242acfabc'><marimo-file data-initial-value='[]' data-label='null' data-filetypes='[]' data-multiple='false' data-kind='&quot;area&quot;' data-max_size='100000000'></marimo-file></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "805e0da5a1fe4acb68b502741228f6e0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span style=\"background-color: #4CAF50; color: white; padding: 4px 12px; border-radius: 12px; font-size: 14px; font-weight: bold; display: inline-block;\">NUBANK</span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "0bd76b0064664ff11f74f7b03b81a2b0",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "dacec1b0b9e8852537fdcc30aa6dc4eb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='12b54bb7-7f96-b5dd-07bb-b2861844c27e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;&#92;&quot;:0,&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;date&#92;&quot;:&#92;&quot;28/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;79,90&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;CIA DOS BICHOS&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:1,&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;date&#92;&quot;:&#92;&quot;28/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;31,86&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;SHOPEE*SHOPEE*BOASVIBE&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:2,&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;date&#92;&quot;:&#92;&quot;27/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;156,90&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;LOJAS COLOMBO&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:3,&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;date&#92;&quot;:&#92;&quot;27/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;68,06&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;GOOGLE YOUTUBEPREMIUM&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:4,&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;date&#92;&quot;:&#92;&quot;26/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;80,61&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;PERUZZO&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:5,&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;date&#92;&quot;:&#92;&quot;26/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;57,80&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;NETFLIX.COM&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:6,&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;date&#92;&quot;:&#92;&quot;25/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;106,97&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;ACOUGUEFOGODECHAO&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:7,&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;date&#92;&quot;:&#92;&quot;25/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;67,97&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;ACOUGUEFOGODECHAO&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:8,&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;date&#92;&quot;:&#92;&quot;24/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;-345,38&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;PAGAMENTO RECEBIDO&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;},{&#92;&quot;&#92;&quot;:9,&#92;&quot;_marimo_row_id&#92;&quot;:9,&#92;&quot;date&#92;&quot;:&#92;&quot;24/03/2026&#92;&quot;,&#92;&quot;amount&#92;&quot;:&#92;&quot;169,06&#92;&quot;,&#92;&quot;place&#92;&quot;:&#92;&quot;PERUZZO&#92;&quot;,&#92;&quot;payee&#92;&quot;:&#92;&quot;CIRO&#92;&quot;}]&quot;' data-total-rows='68' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;date&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;amount&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;place&quot;,[&quot;string&quot;,&quot;string&quot;]],[&quot;payee&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[[&quot;&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
