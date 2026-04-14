@@ -3,7 +3,7 @@ from adapters.base import StatementAdapter
 import pandas as pd
 import pdfplumber
 import re
-from datetime import date
+from datetime import date, datetime
 
 MESES = {
     "janeiro": 1,
@@ -57,11 +57,11 @@ class PluxeeAdapter(StatementAdapter):
         return "R$" in line
 
     @staticmethod
-    def _extract_date(line):
+    def _extract_date(line, year):
         day_month = line.split(",")[1].strip().split(" ")
         day = day_month[0]
         month = day_month[1]
-        return date(2026, MESES[month], int(day))
+        return date(year, MESES[month], int(day))
 
     @staticmethod
     def _extract_amount(line):
@@ -81,6 +81,8 @@ class PluxeeAdapter(StatementAdapter):
 
         i = 0
         current_date = None
+        current_year = datetime.now().year
+        last_month = None
         transactions = []
         errors = []
 
@@ -88,7 +90,12 @@ class PluxeeAdapter(StatementAdapter):
             line = pdf_lines[i]
 
             if self._is_date(line):
-                current_date = self._extract_date(line)
+                month_str = line.split(",")[1].strip().split(" ")[1]
+                month = MESES[month_str]
+                if last_month is not None and month > last_month:
+                    current_year -= 1
+                last_month = month
+                current_date = self._extract_date(line, current_year)
             elif line == "Compra no Alimentação":
                 if not self._is_amount(pdf_lines[i + 1]):
                     errors.append(f"'Compra no Alimentação' not followed by valid amount. Got: {pdf_lines[i + 1]}")

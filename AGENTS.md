@@ -250,7 +250,7 @@ Do not work around these — fix at source when addressed.
 
 | Location | Issue |
 |----------|-------|
-| `adapters/pluxee.py:64` | Year hardcoded to `2026` in `date(2026, ...)`. Will fail for 2027+ transactions. Fix: extract year from PDF header or use `datetime.now().year`. |
+| `adapters/pluxee.py` | ~~Year hardcoded to `2026`~~ — fixed. Year now inferred from `datetime.now().year` with rollover detection for statements crossing December/January boundaries. |
 | `core/statement.py` `filter_date()` | Returns a raw `DataFrame`, not a `Statement`. Callers must wrap in `Statement()` manually. Inconsistent with the rest of the API. |
 | `adapters/mercadopago.py` | Place field not uppercased in `to_statement()`. Rules won't match Mpago transactions unless the rule is lowercased (it shouldn't be). |
 | `pyproject.toml` | `pydantic-ai` declared but not yet wired up. Intended for AI assistance within the Marimo interface. |
