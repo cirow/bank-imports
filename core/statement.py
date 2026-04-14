@@ -85,5 +85,5 @@ class Statement:
             last_day = calendar.monthrange(year, month)[1]
             from_date = pd.to_datetime(f"{year:04d}-{month:02d}-01")
             to_date = pd.to_datetime(f"{year:04d}-{month:02d}-{last_day:02d}")
-
-        return(self.df[self.df[self.DATE_FIELD].between(from_date, to_date)])
+        _df = self.df.copy()
+        self.df = _df[_df[self.DATE_FIELD].between(from_date, to_date)]

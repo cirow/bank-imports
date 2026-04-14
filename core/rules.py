@@ -26,7 +26,7 @@ def write(filename="categories.csv"):
 
 def filter_date(s: statement.Statement, month: int, year: int) -> statement.Statement:
     if month or year:
-        return statement.Statement(s.filter_date(month, year))
+        s.filter_date(month, year)
     return s
 
 def apply(s: statement.Statement):

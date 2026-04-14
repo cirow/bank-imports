@@ -76,11 +76,6 @@ def _(payee_name):
 
 
 @app.cell
-def _():
-    return
-
-
-@app.cell
 def _(current_statement, mo, payee_name):
     mo.ui.table(data=current_statement.to_sheets_df(payee=payee_name.value))
     return

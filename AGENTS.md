@@ -87,7 +87,7 @@ After classify runs, output is written to `{stem}_categorized.csv` in the same d
 
 **Key methods:**
 
-- `filter_date(month, year)` — returns a filtered DataFrame (not a Statement — known inconsistency, callers wrap in `Statement()`)
+- `filter_date(month, year)` — filters `self.df` in-place by the given month/year. Pass `0` for month or year to skip that filter.
 - `to_sheets_df(payee="PAYEE_NAME")` — returns a formatted DataFrame for Sheets export: date as `DD/MM/YYYY`, amount as `"72,23"` (comma decimal), payee placeholder column added
 - `group_similar_purchases(label, label_text)` — aggregates rows matching substring into first row
 - `categorize_purchases(label, label_text, category)` — sets category on matching rows
@@ -244,19 +244,6 @@ Raise `ValueError` with a clear message. The exception to this is `PluxeeAdapter
 
 ---
 
-## Known Issues
-
-Do not work around these — fix at source when addressed.
-
-| Location | Issue |
-|----------|-------|
-| `adapters/pluxee.py` | ~~Year hardcoded to `2026`~~ — fixed. Year now inferred from `datetime.now().year` with rollover detection for statements crossing December/January boundaries. |
-| `core/statement.py` `filter_date()` | Returns a raw `DataFrame`, not a `Statement`. Callers must wrap in `Statement()` manually. Inconsistent with the rest of the API. |
-| `adapters/mercadopago.py` | Place field not uppercased in `to_statement()`. Rules won't match Mpago transactions unless the rule is lowercased (it shouldn't be). |
-| `pyproject.toml` | `pydantic-ai` declared but not yet wired up. Intended for AI assistance within the Marimo interface. |
-| `file-sig.py` (root) | Dead code. Safe to delete. |
-
----
 
 ## Domain Knowledge
 
