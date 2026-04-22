@@ -1,5 +1,6 @@
 import pandas as pd
 import calendar
+from hashlib import md5
 from datetime import datetime
 from decimal import ROUND_HALF_UP, Decimal
 
@@ -73,6 +74,8 @@ class Statement:
         _df[Statement.DATE_FIELD] = _df[Statement.DATE_FIELD].dt.strftime("%d/%m/%Y")
         _df[Statement.AMOUNT_FIELD] = _df[Statement.AMOUNT_FIELD].apply(lambda x: str(x).replace(".", ","))
         _df["payee"] = payee
+        _df['import_id'] = (_df[Statement.DATE_FIELD].astype(str) + _df[Statement.AMOUNT_FIELD].astype(str) + _df["payee"].astype(str)).apply(lambda x: md5(str(x).encode()).hexdigest())
+        _df.set_index('import_id', inplace=True)
         return _df
 
     def filter_date(self, month, year):

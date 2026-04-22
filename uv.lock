@@ -230,6 +230,10 @@ dependencies = [
     { name = "marimo" },
     { name = "pandas" },
     { name = "pdfplumber" },
+]
+
+[package.dev-dependencies]
+dev = [
     { name = "pydantic-ai" },
 ]
 
@@ -239,8 +243,10 @@ requires-dist = [
     { name = "marimo", specifier = ">=0.23.0" },
     { name = "pandas", specifier = ">=3.0.2" },
     { name = "pdfplumber", specifier = ">=0.11.9" },
-    { name = "pydantic-ai", specifier = ">=1.80.0" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pydantic-ai", specifier = ">=1.80.0" }]
 
 [[package]]
 name = "beartype"

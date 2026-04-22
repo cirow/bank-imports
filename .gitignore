@@ -1,9 +1,11 @@
 __pycache__/
 *.pyc
+.venv
 
 # Sample data files
 *.csv
 *.pdf
+*.egg-info
 
 # But keep categories config files
 !categories.csv
